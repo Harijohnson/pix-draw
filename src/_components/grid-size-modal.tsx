@@ -15,7 +15,7 @@ interface GridSizeModalProps {
 export const GridSizeModal = ({ currentSize, onClose, onSizeChange }: GridSizeModalProps) => {
   const [size, setSize] = useState(currentSize)
   const minSize = 8
-  const maxSize = 20
+  const maxSize = 18
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">

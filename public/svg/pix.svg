@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    @keyframes blinkBlack {
+      0% { fill: black; }
+      50% { fill: white; }
+      100% { fill: black; }
+    }
+    
+    @keyframes blinkWhite {
+      0% { fill: white; }
+      50% { fill: black; }
+      100% { fill: white; }
+    }
+    
+    .blink-black {
+      animation: blinkBlack 2s infinite;
+    }
+    
+    .blink-white {
+      animation: blinkWhite 2s infinite;
+    }
+  </style>
+  
+  <!-- Top left: white blinking -->
+  <rect x="10" y="10" width="35" height="35" fill="white" class="blink-white" />
+  
+  <!-- Top right: black blinking -->
+  <rect x="55" y="10" width="35" height="35" fill="black" class="blink-black" />
+  
+  <!-- Bottom left: black blinking -->
+  <rect x="10" y="55" width="35" height="35" fill="black" class="blink-black" />
+  
+  <!-- Bottom right: white blinking -->
+  <rect x="55" y="55" width="35" height="35" fill="white" class="blink-white" />
+</svg>
