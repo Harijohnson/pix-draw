@@ -210,10 +210,10 @@ export const PixelArtEditor = () => {
   }, [])
 
   return (
-    <div className="flex flex-col w-full h-80 justify-center align-middle mt-6">
-      <div className="flex flex-row items-stretch justify-between w-full h-80 gap-4 p-4">
+    <div className="flex flex-col w-full h-[95vh] justify-center align-middle ">
+      <div className="flex flex-row items-stretch justify-between w-full h-full gap-4 p-4 my-6">
         {/* Left Tools Panel */}
-        <div className="bg-gray-200 rounded-lg p-3 flex flex-col justify-between min-h-[80vh]">
+        <div className="bg-gray-100 rounded-lg p-3 flex flex-col justify-between min-h-[80vh]">
           <div className="flex flex-col gap-4">
             {tools.map((tool) => (
               <button
@@ -252,7 +252,7 @@ export const PixelArtEditor = () => {
         {/* Pixel Canvas - Center and Expanded */}
         <div
           ref={canvasRef}
-          className="bg-white rounded-lg shadow-md p-5 flex-grow flex items-center justify-center min-h-[80vh]"
+          className="bg-gray-100 rounded-lg shadow-md p-5 flex-grow flex items-center justify-center min-h-[80vh]"
           onDragStart={preventDragHandler}
         >
           <div
@@ -285,7 +285,7 @@ export const PixelArtEditor = () => {
         </div>
 
         {/* Right Panel - Export */}
-        <div className="bg-gray-200 rounded-lg p-5 min-h-[80vh] min-w-[150px]">
+        <div className="bg-gray-100 rounded-lg p-5 min-h-[80vh] min-w-[150px]">
           <div className="flex flex-col items-center justify-start">
             <h3 className="text-sm font-semibold mb-4">Export Options</h3>
             <DropdownMenu>
